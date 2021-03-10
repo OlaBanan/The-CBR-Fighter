@@ -1,0 +1,325 @@
+body {
+    background-color: #04395E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#headder {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+    color: #D5896F;
+
+}
+#s1 {
+	font-weight: 900;
+}
+
+#choseYouFighter {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    background-color: #031D44;
+    border-radius: 25px;
+    border: 2px solid #D5896F;
+    left: 28%;
+    top: 16%;
+}
+
+#start {
+    position: absolute;
+    width: 15%;
+    height: 80%;
+    background-color: #031D44;
+    border-radius: 25px;
+    border: 2px solid #D5896F;
+    left: 80%;
+    top: 16%;  
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #02142e;
+    border: 2px solid #D5896F;
+    color: #D5896F;
+}
+
+#startText {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+    color: #D5896F;
+    top: 45%;
+}
+
+#startStats {
+    position: absolute;
+    width: 21%;
+    height: 80%;
+    background-color: #031D44;
+    border-radius: 25px;
+    border: 2px solid #D5896F;
+    left: 5%;
+    top: 16%;
+}
+
+#mainStats {
+    position: absolute;
+    color: #D5896F;
+    font-size: 25px;
+    left: 5%;
+    top: 13%;
+}
+
+
+#inforHeader {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+    color: #D5896F;
+}
+
+#firstPlayerSelection {
+    position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+    color: #d62839;
+    top: 5%;
+}
+
+#secondPlayerSelectoion {
+    position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+    color: #136f63;
+    top:80%;
+}
+
+.IMG {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.IMG:hover {
+    border: 3px solid #D5896F;
+}
+
+#img1 {
+    left: 10%;
+    top: 5%;
+}
+
+#img2 {
+    left: 40%;
+    top: 5%;
+}
+
+#img3 {
+    left: 70%;
+    top: 5%;
+}
+
+#img4 {
+    left: 10%;
+    top: 37%;
+}
+
+#img5 {
+    left: 40%;
+    top: 37%;
+}
+
+#img6 {
+    left: 70%;
+    top: 37%;
+}
+#img7 {
+    left: 10%;
+    top: 70%;
+}
+
+#img8 {
+    left: 40%;
+    top: 70%;
+}
+
+#img9 {
+    left: 70%;
+    top: 70%;
+}
+
+#loadingBox {
+    position: absolute;
+    width: 15%;
+    height: 29%;
+    background-color: #031D44;
+    border-radius: 25px;
+    border: 2px solid #D5896F;
+    left: 42%;
+    top: 25%;
+}
+
+.loader {
+    position: absolute;
+    border: 16px solid #d5896f; /* Light grey */
+    border-top: 16px solid #70a288; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+    top: 22%;
+    left: 25%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#fightingBox {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #073b4c;
+    border-radius: 25px;
+    border: 2px solid #D5896F;
+    left: 9%;
+    top: 15%;
+}
+
+.imgPlayerOne {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    left: 2%;
+}
+
+.imgPlayerTwo {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 74.8%;
+    border-radius: 25px;
+}
+
+#p1InfoBoxThingy {
+    position: absolute;
+    width: 30%;
+    height: 46%;
+    background-color: #031D44;
+    border-radius: 25px;
+    border: 2.3px solid #D5896F;
+    left: 2%;
+    top: 51%;
+}
+
+#p2InfoBozThingy {
+    position: absolute;
+    width: 30%;
+    height: 46%;
+    background-color: #031D44;
+    border-radius: 25px;
+    border: 2.3px solid #D5896F;
+    left: 67.7%;
+    top: 51%;
+}
+
+.IMG2 {
+    position: absolute;
+    border: 2.3px solid #D5896F;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+#playerOneFightingBox {
+    position: absolute;
+    top: 1.2%;
+    left: 2%;
+}
+
+#playerTwoFightingBox {
+    position: absolute;
+    top: 1.2%;
+    left: 74.6%;
+}
+
+#P1Nameheader, #p2Nameheader {
+    text-align: center;
+    font-size: 40px;
+    color: #D5896F;
+}
+
+.attackTypeButton {
+    position: absolute;
+    font-size: 30px;
+    color: #D5896F;
+    border: 2px solid #D5896F;
+    background-color: #04395E;
+    border-radius: 20px;
+    padding: 5px;
+    left: 5%;
+    cursor: pointer;
+}
+
+.attackTypeButton:hover{
+    background-color: #d62839;
+}
+
+#p1HealtDiv, #p2HealtDiv{
+    position: absolute;
+    font-size: 30px;
+    color: #D5896F;
+    padding-bottom: 10px;
+    left: 5%;
+    
+}
+
+#damageAndBlockP1 {
+    position: absolute;
+    font-size: 50px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#damageAndBlockP2 {
+    position:absolute;
+    font-size: 50px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cobinedDamageDoneDiv {
+    position:absolute;
+    font-size: 40px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d33a3a;
+}

@@ -1,0 +1,69 @@
+Power (PWR):
+-physical strength 
+
+--Pro:
+physical dmg increase 
+
+--Con:
+stamina usage
+
+
+Intelligence (INT):
+-Logic skills
+-IQ
+-Skoleflink
+
+--Pro:
+noe med crit
+
+--Con:
+Low defence
+
+Mobility (MOB)
+-Kroppskontroll
+-Dexterity
+
+--Pro:
+Stamina
+Dodge chance
+
+--Con:
+Low HP
+
+Mentality (MNT):
+Mental strength 
+
+--Pro:
+DEF Increase
+STA Increase
+
+Luck (LUCK):
+
+
+--Pro: 
+Kan ha høy crit, men har lav hit rate
+
+Weight (WGT):
+
+--Pro:
+Øker HP
+
+
+
+
+
+	"sqeeuze water out of stone" -OLA
+
+
+
+
+"livet trenger rasisme da liksom" - sipan 02.02.2020
+«Jeg har lyst til mat»
+-Schmipan, 04.10.19
+"Det var det jeg TENKTE meg, FUckings løp!"-Lukas 06.10.2019
+"Okay, hvis ikke du stopper nå så violater jeg rompehullet ditt" -Fredrik 14/9/2019
+HVORFOR ER DU IKKE INNI MEG! -Adam
+
+"Well technically, even though only making up 13 percent of the population..." -Mathias
+"Stfu phaggot" - Jasion
+

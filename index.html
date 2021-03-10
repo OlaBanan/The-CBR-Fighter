@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<title> Title </title>
+</head>
+	<body>
+        <div id="headder">
+            The <span id="s1">CBR</span> fighter.
+            <hr id="theThingsId" style="height:2px;border-width:0;color:gray;background-color:#D5896F">
+        </div>        
+        <div id="selector">
+            <div id="choseYouFighter">
+                <div class="img" id="img1">
+                    <img src="pictures/fredrik.png" class="IMG" onmouseover="x1()" onclick="characterSelectioChooser(nameFredrik)">
+                </div>
+                <div class="img" id="img2">
+                    <img src="pictures/lukas.png" class="IMG" onmouseover="x2()" onClick="characterSelectioChooser(nameLukas)">
+                </div>
+                <div class="img" id="img3">
+                    <img src="pictures/jaison.png" class="IMG" onmouseover="x3()" onclick="characterSelectioChooser(nameJaison)">
+                </div>
+                <div class="img" id="img4">
+                    <img src="pictures/mathias.png" class="IMG" onmouseover="x4()" onclick="characterSelectioChooser(nameMathias)">
+                </div>
+                <div class="img" id="img5">
+                    <img src="pictures/ola.png" class="IMG" onmouseover="x5()" onclick="characterSelectioChooser(nameOla)">
+                </div>
+                <div class="img" id="img6">
+                    <img src="pictures/sipan.png" class="IMG" onmouseover="x6()" onclick="characterSelectioChooser(nameSipan)">
+                </div>
+                <div class="img" id="img7">
+                    <img src="pictures/david.png" class="IMG" onmouseover="x7()" onclick="characterSelectioChooser(nameDavid)">
+                </div>
+                <div class="img" id="img8">
+                    <img src="pictures/jona.png" class="IMG" onmouseover="x8()" onclick="characterSelectioChooser(nameJona)">
+                </div>
+                <div class="img" id="img9">
+                    <img src="pictures/adam.png" class="IMG" onmouseover="x9()" onclick="characterSelectioChooser(nameAdam)">
+                </div>
+            </div>
+            <div id="start" onclick="startTheMatch()">
+                <div id="startText">
+                    Start
+                </div>
+                <div id="firstPlayerSelection"></div>
+                <div id="secondPlayerSelectoion"></div>
+                <div id="erroMesageThingy"></div>
+            </div>
+            <div id="startStats">
+                <div id="inforHeader">
+                    Info:
+                </div>
+                    <div id="mainStats">
+                        <div id="stat1">
+                            Power: 
+                        </div>
+                        <br>
+                        <div id="stat2">
+                            Intelligence:
+                        </div>
+                        <br>
+                        <div id="stat3">
+                            Mobilety:
+                        </div>
+                        <br>
+                        <div id="stat4">
+                            Mentality:
+                        </div>
+                        <br>
+                        <div id="stat5">
+                            Patience:
+                        </div>
+                        <br>
+                        <div id="stat6">
+                            Weight: 
+                        </div>
+                        <br>
+                        <div id="qoute">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="loadingBox">
+            <div class="loader"></div>
+        </div>
+        <div id="fightingBox">
+            <div id="playerOneFightingBox">
+                <div class="imgPlayerOne" id="imgPlayerOne1">
+                    <img src="pictures/fredrik.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne2">
+                    <img src="pictures/lukas.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne3">
+                    <img src="pictures/jaison.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne4">
+                    <img src="pictures/mathias.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne5">
+                    <img src="pictures/ola.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne6">
+                    <img src="pictures/sipan.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne7">
+                    <img src="pictures/david.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne8">
+                    <img src="pictures/jona.png" class="IMG2">
+                </div>
+                <div class="imgPlayerOne" id="imgPlayerOne9">
+                    <img src="pictures/adam.png" class="IMG2">
+                </div>
+            </div>
+            <div id="playerTwoFightingBox">
+                <div class="imgPlayerTwo" id="imgPlayerTwo1">
+                    <img src="pictures/fredrik.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo2">
+                    <img src="pictures/lukas.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo3">
+                    <img src="pictures/jaison.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo4">
+                    <img src="pictures/mathias.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo5">
+                    <img src="pictures/ola.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo6">
+                    <img src="pictures/sipan.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo7">
+                    <img src="pictures/david.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo8">
+                    <img src="pictures/jona.png" class="IMG2">
+                </div>
+                <div class="imgPlayerTwo" id="imgPlayerTwo9">
+                    <img src="pictures/adam.png" class="IMG2">
+                </div>
+            </div>
+            <div id="p1InfoBoxThingy">
+                <div id="P1Nameheader" class="nameHeader"></div>
+                <div id="p1HealtDiv"></div>
+                <br><br>
+                <div id="p1PowerButton" class="attackTypeButton" onclick="p1TurnFunction(typePower)"></div>
+                <br><br><br>
+                <div id="p1IntelligenceButton" class="attackTypeButton" onclick="p1TurnFunction(typerIntelligence)"></div>
+                <br><br><br>
+                <div id="p1MobilityButton" class="attackTypeButton" onclick="p1TurnFunction(typeMobility)"></div>
+            </div>
+            <div id="damageAndBlockP1"></div>
+            <div id="damageAndBlockP2"></div>
+            <div id="cobinedDamageDoneDiv"></div>
+            <div id="p2InfoBozThingy">
+                <div id="p2Nameheader" class="nameHeader"></div>
+                <div id="p2HealtDiv"></div>
+                <br><br>
+                <div id="p2PowerButton" class="attackTypeButton" onclick="p2TurnFuncton(typePower)"></div>
+                <br><br><br>
+                <div id="p2IntelligenceButton" class="attackTypeButton" onclick="p2TurnFuncton(typerIntelligence)"></div>
+                <br><br><br>
+                <div id="p2MobilityButton" class="attackTypeButton" onclick="p2TurnFuncton(typeMobility)"></div>
+            </div>
+             </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
