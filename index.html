@@ -20,7 +20,7 @@
                     <img src="pictures/fredrik.png" class="IMG" onmouseover="x1()" onclick="characterSelectioChooser(nameFredrik)">
                 </div>
                 <div class="img" id="img2">
-                    <img src="pictures/lukas.png" class="IMG" onmouseover="x2()" onClick="characterSelectioChooser(nameLukas)">
+                    <img src="pictures/lukas.png" class="IMG" onmouseover="x2()" onclick="characterSelectioChooser(nameLukas)">
                 </div>
                 <div class="img" id="img3">
                     <img src="pictures/jaison.png" class="IMG" onmouseover="x3()" onclick="characterSelectioChooser(nameJaison)">
@@ -152,24 +152,25 @@
                 <div id="P1Nameheader" class="nameHeader"></div>
                 <div id="p1HealtDiv"></div>
                 <br><br>
-                <div id="p1PowerButton" class="attackTypeButton" onclick="p1TurnFunction(typePower)"></div>
+                <div id="p1PowerButton" class="attackTypeButton"    onclick="toMakeThisFackingWorkP1Power()"></div>
                 <br><br><br>
-                <div id="p1IntelligenceButton" class="attackTypeButton" onclick="p1TurnFunction(typerIntelligence)"></div>
+                <div id="p1IntelligenceButton" class="attackTypeButton" onclick="toMakeThisFackingWorkP1Int()"></div>
                 <br><br><br>
-                <div id="p1MobilityButton" class="attackTypeButton" onclick="p1TurnFunction(typeMobility)"></div>
+                <div id="p1MobilityButton" class="attackTypeButton" onclick="toMakeThisFackingWorkP1Mob()"></div>
             </div>
             <div id="damageAndBlockP1"></div>
             <div id="damageAndBlockP2"></div>
             <div id="cobinedDamageDoneDiv"></div>
+            <div id="whosTurnDiv"></div>
             <div id="p2InfoBozThingy">
                 <div id="p2Nameheader" class="nameHeader"></div>
                 <div id="p2HealtDiv"></div>
                 <br><br>
-                <div id="p2PowerButton" class="attackTypeButton" onclick="p2TurnFuncton(typePower)"></div>
+                <div id="p2PowerButton" class="attackTypeButton" onclick="toMakeThisFackingWorkP2Power()"></div>
                 <br><br><br>
-                <div id="p2IntelligenceButton" class="attackTypeButton" onclick="p2TurnFuncton(typerIntelligence)"></div>
+                <div id="p2IntelligenceButton" class="attackTypeButton" onclick="toMakeThisFackingWorkP2Int()"></div>
                 <br><br><br>
-                <div id="p2MobilityButton" class="attackTypeButton" onclick="p2TurnFuncton(typeMobility)"></div>
+                <div id="p2MobilityButton" class="attackTypeButton" onclick="toMakeThisFackingWorkP2Mob()"></div>
             </div>
              </div>
         <script src="script.js"></script>

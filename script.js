@@ -6,12 +6,16 @@ var selectionProces = true;
 var loadingTimeFirstMS =  100; // soon -> Math.random() * 10000;
 
 var typePower = "power";
-var typerIntelligence = "intelligence";
+var typeIntelligence = "intelligence";
 var typeMobility = "mobility";
 
 // gameplay vars -----------------------------------------------------------------------
-var p1Turn = 0;
-var p2Turn = 0;
+var playerTurn = true;
+// true = p1 turn
+// false = p2 turn
+
+var xxx = "xxx"; // player One
+var yyy = "yyy"; // player two
 
 // game vars ---------------------------------------------------------------------------
 //player One
@@ -701,7 +705,7 @@ function showTheButts () {
 function showThenHideDamageAndBlock (damageOrBlockP1, damageOrBlockP2, playerToShow) {
     // playerToShow --> if (true)  == playerone is green
     //                  if (false) == playerone is red
-    var showTime = 15000;
+    var showTime = 40000;
     // 4 sec
 
     if (playerToShow == true) {
@@ -740,6 +744,102 @@ function showThenHideDamageAndBlock (damageOrBlockP1, damageOrBlockP2, playerToS
         }, showTime);
     }
 }
+
+
+
+
+function switchBetweenPlayersAndDoAttack (attackTypeP, champ) {
+    // ~ PlayerTurn
+    // true = p1 turn
+    // false = p2 turn
+
+    //  var xxx = "xxx"; // player One
+    //  var yyy = "yyy"; // player two
+
+    if (playerTurn == true && champ == "xxx"){
+        if (attackTypeP == typePower){
+            p1TurnFunction(typePower);
+            if (p2HP <= 0) {
+                congratsToTheWinner(p1Name, p2Name);
+                p2HP = 0;
+            }
+            playerTurn = false;
+        }
+        if (attackTypeP == typeIntelligence) {
+            p1TurnFunction(typeIntelligence);
+            if (p2HP <= 0) {
+                congratsToTheWinner(p1Name, p2Name);
+                p2HP = 0;
+            }
+            playerTurn = false;
+        }
+        if (attackTypeP == typeMobility) {
+            p1TurnFunction(typeMobility);
+            if (p2HP <= 0) {
+                congratsToTheWinner(p1Name, p2Name);
+                p2HP = 0;
+            }
+            playerTurn = false;
+        }
+    }
+    if (playerTurn == false && champ == "yyy") {
+        if (attackTypeP == typePower) {
+            p2TurnFuncton(attackTypeP);
+            if (p1HP <= 0) {
+                congratsToTheWinner(p1Name, p2Name);
+                p1HP = 0;
+            }
+            playerTurn = true;
+        }
+        if (attackTypeP == typeIntelligence) {
+            p2TurnFuncton(attackTypeP);
+            if (p1HP <= 0) {
+                congratsToTheWinner(p1Name, p2Name);
+                p1HP = 0;
+            }
+            playerTurn = true;
+        }
+        if (attackTypeP == typeMobility) {
+            p2TurnFuncton(attackTypeP);
+            if (p1HP <= 0) {
+                congratsToTheWinner(p1Name, p2Name);
+                p1HP = 0;
+            }
+            playerTurn = true;
+        }
+    }
+}
+// Player One
+function toMakeThisFackingWorkP1Power () {
+    switchBetweenPlayersAndDoAttack(typePower, xxx);
+    document.getElementById("whosTurnDiv").innerHTML = p2Name.charAt(0).toUpperCase() + p2Name.slice(1) + "'s Turn";
+} 
+function toMakeThisFackingWorkP1Int () {
+    switchBetweenPlayersAndDoAttack(typeIntelligence, xxx);
+    document.getElementById("whosTurnDiv").innerHTML = p2Name.charAt(0).toUpperCase() + p2Name.slice(1) + "'s Turn";
+} 
+function toMakeThisFackingWorkP1Mob () {
+    switchBetweenPlayersAndDoAttack(typeMobility, xxx);
+    document.getElementById("whosTurnDiv").innerHTML = p2Name.charAt(0).toUpperCase() + p2Name.slice(1) + "'s Turn";
+} 
+// PLayer Two
+function toMakeThisFackingWorkP2Power () {
+    switchBetweenPlayersAndDoAttack(typePower, yyy);
+    document.getElementById("whosTurnDiv").innerHTML = p1Name.charAt(0).toUpperCase() + p1Name.slice(1) + "'s Turn";
+} 
+function toMakeThisFackingWorkP2Int () {
+    switchBetweenPlayersAndDoAttack(typeIntelligence, yyy);
+    document.getElementById("whosTurnDiv").innerHTML = p1Name.charAt(0).toUpperCase() + p1Name.slice(1) + "'s Turn";
+} 
+function toMakeThisFackingWorkP2Mob () {
+    switchBetweenPlayersAndDoAttack(typeMobility, yyy);
+    document.getElementById("whosTurnDiv").innerHTML = p1Name.charAt(0).toUpperCase() + p1Name.slice(1) + "'s Turn";
+} 
+
+function congratsToTheWinner (winner, looser) {
+    alert(winner + " is the winner, and " + looser + " is the looser.")
+}
+
 
 // når en player gainer HP skriv F.Eks  "fredrik ego is to high for that attack"
 

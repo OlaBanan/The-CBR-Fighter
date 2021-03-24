@@ -17,7 +17,7 @@ body {
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	font-size: 50px;
+	font-size: 60px;
 	font-style: italic;
     color: #D5896F;
 
@@ -322,4 +322,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #d33a3a;
+}
+
+#whosTurnDiv {
+    position:absolute;
+    font-size: 40px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D5896F;
 }
